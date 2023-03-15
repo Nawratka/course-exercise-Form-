@@ -77,13 +77,6 @@ const checkErrors = () => {
 	}
 };
 
-const closePopup = () => {
-	popup.classList.remove('show-popup');
-	[username, pass, pass2, email].forEach(el => {
-		el.value = ''
-	})
-}
-
 sendBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 
@@ -103,5 +96,3 @@ clearBtn.addEventListener('click', (e) => {
 		clearError(el);
 	});
 });
-
-closePopupBtn.addEventListener('click', closePopup)
